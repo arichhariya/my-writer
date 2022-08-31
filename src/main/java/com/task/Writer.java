@@ -1,30 +1,32 @@
 package com.task;
 
 import java.util.List;
+import java.util.concurrent.atomic.AtomicReference;
 
 public abstract class Writer {
 
-    protected boolean close = false;
-
-    public void write(String text, Operation operation) {
-        operation.perform(text);
-        this.write(text);
-    }
+    protected boolean closed = false;
 
     public abstract void write(String text);
-
-    public void write(String text, List<Operation> operations) {
-        operations.forEach(operation -> operation.perform(text));
-        this.write(text);
-    }
-
     public abstract String read();
 
+    public void write(String text, List<Operation> operations) {
+        if (closed) return;
+        AtomicReference<String> finalString = new AtomicReference<>(text);
+        operations.forEach(operation -> finalString.set(operation.perform(text)));
+        this.write(finalString.get());
+    }
+
+    public void write(String text, Operation operation) {
+        if (closed) return;
+        this.write(operation.perform(text));
+    }
+
     public void close() {
-        this.close = true;
+        this.closed = true;
     }
 
     public void open() {
-        this.close = false;
+        this.closed = false;
     }
 }

@@ -4,20 +4,17 @@ import com.task.Writer;
 
 public class StringWriter extends Writer {
 
-    private String stringName;
-
-    public StringWriter(String stringName) {
-        this.stringName = stringName;
-    }
+    private String string;
 
 
     @Override
     public void write(String text) {
-
+        if (closed) return;
+        string = string.concat(text);
     }
 
     @Override
     public String read() {
-        return null;
+        return string;
     }
 }

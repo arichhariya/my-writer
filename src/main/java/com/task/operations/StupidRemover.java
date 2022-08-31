@@ -4,7 +4,7 @@ import com.task.Operation;
 
 public class StupidRemover implements Operation {
     @Override
-    public void perform(String text) {
-
+    public String perform(String text) {
+        return text.replaceAll("stupid","s*****");
     }
 }

@@ -5,19 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83ac405a-6d26-4a49-a157-d45f4f89328a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/task/Operation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/task/operations/DuplicateRemover.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/task/operations/LowerCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/task/operations/StupidRemover.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/task/operations/UpperCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/task/writers/FileWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/task/writers/StringWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/task/exception/WriterException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/task/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task/Operation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/task/Writer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task/Writer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task/operations/DuplicateRemover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task/operations/DuplicateRemover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task/operations/LowerCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task/operations/LowerCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task/operations/StupidRemover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task/operations/StupidRemover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task/operations/UpperCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task/operations/UpperCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task/writers/FileWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task/writers/FileWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task/writers/StringWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task/writers/StringWriter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +66,18 @@
       <option name="presentableId" value="Default" />
       <updated>1661977579188</updated>
     </task>
+    <task id="LOCAL-00001" summary="add changes">
+      <created>1661981831685</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661981831685</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="add changes" />
   </component>
 </project>

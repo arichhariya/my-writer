@@ -4,7 +4,7 @@ import com.task.Operation;
 
 public class UpperCase implements Operation {
     @Override
-    public void perform(String text) {
-
+    public String perform(String text) {
+        return text.toUpperCase();
     }
 }
