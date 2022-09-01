@@ -17,8 +17,8 @@ public class FileWriter extends Writer {
 
     @Override
     public void write(String text) {
-        if(closed) return;
-        try (BufferedWriter bw = new BufferedWriter(new java.io.FileWriter(fileName, true))) {
+        if (closed) return;
+        try (BufferedWriter bw = new BufferedWriter(new java.io.FileWriter(fileName))) {
             bw.append(text);
         } catch (IOException e) {
             throw new WriterException("ERROR WHILE WRITING");
@@ -29,10 +29,9 @@ public class FileWriter extends Writer {
     @Override
     public String read() {
         StringBuilder sb = new StringBuilder();
-        char[] buffer = new char[10];
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
-            while (br.read(buffer) != -1) {
-                sb.append(new String(buffer));
+            while (br.ready()) {
+                sb.append((char) br.read());
             }
         } catch (IOException e) {
             throw new WriterException("ERROR WHILE READING");

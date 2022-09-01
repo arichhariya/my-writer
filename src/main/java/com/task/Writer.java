@@ -13,7 +13,7 @@ public abstract class Writer {
     public void write(String text, List<Operation> operations) {
         if (closed) return;
         AtomicReference<String> finalString = new AtomicReference<>(text);
-        operations.forEach(operation -> finalString.set(operation.perform(text)));
+        operations.forEach(operation -> finalString.set(operation.perform(finalString.get())));
         this.write(finalString.get());
     }
 
